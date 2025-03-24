@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Get PickList Values">
+        <template lwc:if={ratingPickList.data}>
+            <lightning-combobox
+                name="Rating"
+                label="Rating"
+                value={value}
+                placeholder="Select Rating"
+                options={ratingPickList.data.values}
+                onchange={handleChange} 
+                class="slds-var-p-around_small"
+            ></lightning-combobox>
+            <p class="slds-var-p-around_small">Selected Value is: {value}</p>
+        </template> 
+            
+    </lightning-card>
+</template>
