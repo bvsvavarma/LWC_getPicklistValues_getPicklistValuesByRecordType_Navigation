@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Get PickList Values By Record Type">
+        <template lwc:if={contactPickListValues.data}>
+            <lightning-combobox
+                name="LeadSource"
+                label="Lead Source"
+                placeholder="Select Lead Source"
+                options={contactPickListValues.data.picklistFieldValues.LeadSource.values}
+                class="slds-var-p-around_small"
+                value={leadSourceValue}
+                onchange={changeHandler}
+            ></lightning-combobox>
+            <p class="slds-var-p-around_small">Selected Lead Source is: {leadSourceValue}</p>
+        </template>
+    </lightning-card>
+</template>
