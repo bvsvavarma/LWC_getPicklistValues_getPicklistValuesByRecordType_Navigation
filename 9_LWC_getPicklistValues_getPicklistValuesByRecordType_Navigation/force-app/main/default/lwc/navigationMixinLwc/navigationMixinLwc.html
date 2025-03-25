@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Navigation">
+        <div class="slds-var-p-around_small">
+            <lightning-button 
+                label="Navigate to Home Page"
+                variant="brand"
+                onclick={navHomeClickHandler}
+            ></lightning-button>
+        </div>
+        <div class="slds-var-p-around_small">
+            <lightning-button 
+                label="Navigate to Account Home Page"
+                variant="brand"
+                onclick={navAccountHomeClickHandler}
+            ></lightning-button>
+        </div>
+        <div class="slds-var-p-around_small">
+            <lightning-button 
+                label="Navigate to New AccountPage"
+                variant="brand"
+                onclick={navNewAccountClickHandler}
+            ></lightning-button>
+        </div>
+    </lightning-card>
+</template>
